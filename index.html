@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">YouTube</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <button>🔍</button>
+    </div>
+    <div class="profile-icon"></div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#">🏠 Home</a>
+    <a href="#">🔥 Trending</a>
+    <a href="#">📺 Subscriptions</a>
+    <a href="#">📚 Library</a>
+    <a href="#">🕑 History</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="video-card">
+      <div class="thumbnail">
+        <img src="https://via.placeholder.com/300x180.png?text=Video+1" alt="Video Thumbnail">
+      </div>
+      <div class="video-info">
+        <div class="channel-logo"></div>
+        <div class="video-details">
+          <h4>Sample Video Title</h4>
+          <p>Channel Name • 1M views • 1 day ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="thumbnail">
+        <img src="https://via.placeholder.com/300x180.png?text=Video+2" alt="Video Thumbnail">
+      </div>
+      <div class="video-info">
+        <div class="channel-logo"></div>
+        <div class="video-details">
+          <h4>Another Great Video</h4>
+          <p>Channel Name • 500k views • 2 days ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
+
+</body>
+</html>
